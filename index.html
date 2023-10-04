@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Let's Play Hangman!</title>
+        <link rel="stylesheet" type="text/css" href="css-1.css">
+        <script src="js-1.js"></script>
+    </head>
+    <body>
+        <!--Start of the game (will disappear)-->
+        <div class='title' id='gone'>
+            <h1>Are You Ready to Hang?</h1>
+            <div id='start-button' onclick='startGame()'>Yes!</div>
+        </div>
+        <!-- ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ -->
+        
+        <div id='theLetter'></div>
+        
+        <div id='hintBox'>
+            <span id='close' onclick="document.getElementById('hintBox').style.visibility = 'hidden';">&times;</span>
+            <p id='textHint'>Hint!</p>
+            <p id='textHintContent'></p>
+        </div>
+        
+        <div id='hangModel'>
+            <div class='playerModel'>
+                <div class='head' id='p5'></div>
+                <div class='body' id='p6'></div>
+                <div class='lHand' id='p7'></div>
+                <div class='rHand' id='p8'></div>
+                <div class='lLeg' id='p9'></div>
+                <div class='rLeg' id='p10'></div>
+            </div>
+            <div class='ground' id='p1'></div>
+            <div class='tiang1' id='p2'></div>
+            <div class='tiang2' id='p3'></div>
+            <div class='tiang3' id='p4'></div>
+        </div>
+        
+        <div id='keyboard'></div>
+
+        <div id='endScreen'>
+            <div id='title'></div>
+            <div id='text'></div>
+            <div id='restart' onclick='location.reload();'>Play Again?</div>
+        </div>
+        
+        <footer>
+            <p>Made by: Teddy</p>
+        </footer>
+    </body>
+</html>
